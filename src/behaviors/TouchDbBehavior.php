@@ -1,9 +1,9 @@
 <?php
 
-namespace diecoding\yii2\behaviors;
+namespace diecoding\behaviors;
 
 use Yii;
-use diecoding\yii2\helpers\Date as DateHelper;
+use diecoding\helpers\Date as DateHelper;
 use yii\base\Behavior;
 use yii\base\Event;
 use yii\db\ActiveRecord;

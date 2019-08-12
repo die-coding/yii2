@@ -1,6 +1,6 @@
 <?php
 
-namespace diecoding\yii2\helpers;
+namespace diecoding\helpers;
 
 /**
  * 
