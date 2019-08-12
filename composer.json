@@ -25,11 +25,6 @@
 			"diecoding\\": "src"
 		}
 	},
-	"extra": {
-		"branch-alias": {
-			"dev-master": "1.0.x-dev"
-		}
-	},
 	"authors": [
 		{
 			"name": "Die Coding",
