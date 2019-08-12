@@ -2,7 +2,7 @@
 
 All Notable changes to `yii2-core` will be documented in this file.
 
-## 0.0.1 - August 12, 2019
+## 1.0.0 - August 12, 2019
 
 ## Changed
 - Nothing
