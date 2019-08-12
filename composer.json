@@ -13,7 +13,6 @@
 		"issues": "https://github.com/die-coding/yii2-core/issues",
 		"source": "https://github.com/die-coding/yii2-core"
 	},
-	"minimum-stability": "dev",
 	"require": {
 		"php": ">=5.6.0",
 		"yiisoft/yii2": "~2.0.14"
@@ -24,11 +23,6 @@
 	"autoload": {
 		"psr-4": {
 			"diecoding\\yii2\\": "src"
-		}
-	},
-	"extra": {
-		"branch-alias": {
-			"dev-master": "1.0.x-dev"
 		}
 	},
 	"authors": [
