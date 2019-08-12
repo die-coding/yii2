@@ -12,7 +12,6 @@ The framework is easy to adjust to meet your needs, because Yii has been designe
 
 [![Latest Version](https://img.shields.io/github/release/die-coding/yii2-core.svg?style=flat-square)](https://github.com/die-coding/yii2-core/releases)
 [![Software License](https://img.shields.io/badge/license-BSD-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/die-coding/yii2-core/master.svg?style=flat-square)](https://travis-ci.org/die-coding/yii2-core)
 [![Quality Score](https://img.shields.io/scrutinizer/g/die-coding/yii2-core.svg?style=flat-square)](https://scrutinizer-ci.com/g/die-coding/yii2-core)
 [![Total Downloads](https://img.shields.io/packagist/dt/diecoding/yii2-core.svg?style=flat-square)](https://packagist.org/packages/diecoding/yii2-core)
 
