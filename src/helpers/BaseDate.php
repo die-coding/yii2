@@ -2,7 +2,6 @@
 
 namespace diecoding\yii2\helpers;
 
-use Yii;
 use yii\db\Connection;
 use yii\db\Expression;
 use yii\db\Query;
@@ -54,9 +53,6 @@ class BaseDate
      * Gets current date from database
      *
      * @param  string          $format Date Format. Please refer to `date()` documentation.
-     * @param  Connection|null $db     the database connection used to generate the SQL statement.
-     *                                 If this parameter is not given, the `db` application
-     *                                 component will be used.
      * @return string
      */
     public static function format($format = 'Y-m-d', $date)
