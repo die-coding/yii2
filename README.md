@@ -41,8 +41,8 @@ composer update
 ## List Class
 
 ```php
-\diecoding\yii2\behaviors\TouchDbBehavior();
+\diecoding\behaviors\TouchDbBehavior();
 
 
-\diecoding\yii2\helpers\Date();
+\diecoding\helpers\Date();
 ```
