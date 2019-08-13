@@ -1,13 +1,6 @@
-<p align="center">
-    <a href="https://www.yiiframework.com/" target="_blank">
-        <img src="https://www.yiiframework.com/files/logo/yii.png" width="400" alt="Yii Framework" />
-    </a>
-</p>
+# Yii2 Core
 
-Yii 2 is a modern framework designed to be a solid foundation for your PHP application.
-
-It is fast, secure and efficient and works right out of the box pre-configured with reasonable defaults.
-The framework is easy to adjust to meet your needs, because Yii has been designed to be flexible.
+Tidak ada dokumentasi, karena hanya untuk tambahan internal Die Coding saja ^_^
 
 
 [![Latest Version](https://img.shields.io/github/release/die-coding/yii2-core.svg?style=flat-square)](https://github.com/die-coding/yii2-core/releases)
@@ -20,7 +13,7 @@ The framework is easy to adjust to meet your needs, because Yii has been designe
 * Melalui console
 
 ```
-composer require --prefer-dist diecoding/yii2-core "*"
+composer require --prefer-dist diecoding/yii2-core "dev-master"
 ```
 
 * Melalui `composer.json`
@@ -28,7 +21,7 @@ composer require --prefer-dist diecoding/yii2-core "*"
 1. Tambahkan pada baris `require`
 
 ```
-"diecoding/yii2-core": "*"
+"diecoding/yii2-core": "dev-master"
 ```
 
 2. Kemudian jalankan
@@ -41,6 +34,8 @@ composer update
 ## List Class
 
 ```php
+\diecoding\behaviors\TouchDbBehavior();
+
 \diecoding\behaviors\TouchDbBehavior();
 
 
