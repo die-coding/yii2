@@ -47,7 +47,7 @@ class BaseDate
     /**
      * @var int
      */
-    private static $_currentDate;
+    protected static $_currentDate;
 
     /**
      * Gets current date from database
