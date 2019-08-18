@@ -40,6 +40,16 @@ class TouchDbBehavior extends Behavior
     public $updatedUser = 'updated_user';
 
     /**
+     * 
+     */
+    public $valueAt;
+
+    /**
+     * 
+     */
+    public $valueUser;
+
+    /**
      * @return array
      */
     public function events()
@@ -66,16 +76,16 @@ class TouchDbBehavior extends Behavior
         $updatedUser = $this->updatedUser;
 
         if ($createdAt)
-            $owner->$createdAt = DateHelper::currentDateTime();
+            $owner->$createdAt = $this->valueAt ?: DateHelper::currentDateTime();
 
         if ($updatedAt)
-            $owner->$updatedAt = DateHelper::currentDateTime();
+            $owner->$updatedAt = $this->valueAt ?: DateHelper::currentDateTime();
 
         if ($createdUser)
-            $owner->$createdUser = @Yii::$app->user->id;
+            $owner->$createdUser = $this->valueUser ?: @Yii::$app->user->username;
 
         if ($updatedUser)
-            $owner->$updatedUser = @Yii::$app->user->id;
+            $owner->$updatedUser = $this->valueUser ?: @Yii::$app->user->username;
 
         return $owner;
     }
@@ -94,10 +104,10 @@ class TouchDbBehavior extends Behavior
         $updatedUser = $this->updatedUser;
 
         if ($updatedAt)
-            $owner->$updatedAt = DateHelper::currentDateTime();
+            $owner->$updatedAt = $this->valueAt ?: DateHelper::currentDateTime();
 
         if ($updatedUser)
-            $owner->$updatedUser = @Yii::$app->user->id;
+            $owner->$updatedUser = $this->valueUser ?: @Yii::$app->user->username;
 
         return $owner;
     }
