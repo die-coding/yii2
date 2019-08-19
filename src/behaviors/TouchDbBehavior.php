@@ -82,10 +82,10 @@ class TouchDbBehavior extends Behavior
             $owner->$updatedAt = $this->valueAt ?: DateHelper::currentDateTime();
 
         if ($createdUser)
-            $owner->$createdUser = $this->valueUser ?: @Yii::$app->user->username;
+            $owner->$createdUser = $this->valueUser ?: @Yii::$app->user->identity->username;
 
         if ($updatedUser)
-            $owner->$updatedUser = $this->valueUser ?: @Yii::$app->user->username;
+            $owner->$updatedUser = $this->valueUser ?: @Yii::$app->user->identity->username;
 
         return $owner;
     }
@@ -107,7 +107,7 @@ class TouchDbBehavior extends Behavior
             $owner->$updatedAt = $this->valueAt ?: DateHelper::currentDateTime();
 
         if ($updatedUser)
-            $owner->$updatedUser = $this->valueUser ?: @Yii::$app->user->username;
+            $owner->$updatedUser = $this->valueUser ?: @Yii::$app->user->identity->username;
 
         return $owner;
     }
