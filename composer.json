@@ -14,7 +14,6 @@
 		"source": "https://github.com/die-coding/yii2-core"
 	},
 	"require": {
-		"php": ">=7.0",
 		"yiisoft/yii2": "~2.0",
 		"yiisoft/yii2-httpclient": "^2.0.0",
 		"yiisoft/yii2-imagine": "~2.2.0",
