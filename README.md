@@ -30,6 +30,35 @@ composer require --prefer-dist diecoding/yii2-core "dev-master"
 composer update
 ```
 
+3. Optional
+```
+php yii migrate --migrationPath=@yii/rbac/migrations
+php yii migrate --migrationPath=@diecoding/rbac/migrations
+php yii migrate --migrationPath=@diecoding/migrations
+```
+
+```php
+
+// BS4
+\yii\bootstrap4\Modal::begin([
+    "id"      => "ajaxCrudModal",
+    "title"   => "",
+    "footer"  => "",
+]);
+
+\yii\bootstrap4\Modal::end();
+
+// BS3
+\yii\bootstrap\Modal::begin([
+    "id"      => "ajaxCrudModal",
+    "title"   => "",
+    "footer"  => "",
+]);
+
+\yii\bootstrap\Modal::end();
+
+```
+
 
 ## List Class
 
@@ -40,4 +69,17 @@ composer update
 
 
 \diecoding\helpers\Date();
+
+\diecoding\DiecodingAsset::register($this);
+```
+
+
+## List Package
+
+```
+"yiisoft/yii2-bootstrap": "~2.0.0",
+"yiisoft/yii2-bootstrap4": "@dev",
+
+"diecoding/yii2-rbac": "dev-master",
+"diecoding/yii2-toastr": "dev-master"
 ```
