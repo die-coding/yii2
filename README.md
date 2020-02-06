@@ -106,9 +106,6 @@ php yii migrate --migrationPath=@diecoding/migrations
 
 "sizeg/yii2-jwt": "^2.0",
 
-"longman/telegram-bot": "*",
-"php-telegram-bot/telegram-bot-manager": "^1.4",
-
 "wbraganca/yii2-dynamicform": "*",
 
 "borales/yii2-phone-input": "*",
