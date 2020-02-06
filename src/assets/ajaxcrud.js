@@ -14,6 +14,14 @@ $(document).ready(function() {
 		modal = new ModalRemote("#ajaxCrudModal");
 	}
 
+	// dissable enter submit
+	modal.keydown(function(event) {
+		if (event.keyCode == 13) {
+			event.preventDefault();
+			return false;
+		}
+	});
+
 	// Catch click event on all buttons that want to open a modal
 	$(document).on("click", '[role="modal-remote"]', function(event) {
 		event.preventDefault();
