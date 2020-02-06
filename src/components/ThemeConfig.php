@@ -54,25 +54,11 @@ class ThemeConfig extends Component
      */
     public function getCommonAssetsUrl()
     {
-        $path = '@themes/common/assets';
+        $path = "{$this->themePath}/common/assets";
         $options = [
-            'forceCopy' => (Yii::$app->request->get('uab') == 1 || Yii::$app->request->get('uabc') == 1),
             'except' => [
                 '*.php',
             ],
-        ];
-        Yii::$app->assetManager->publish($path, $options);
-
-        return Yii::$app->assetManager->getPublishedUrl($path);
-    }
-
-    /**
-     *
-     */
-    public function customPublishedUrl($path)
-    {
-        $options = [
-            'forceCopy' => true,
         ];
         Yii::$app->assetManager->publish($path, $options);
 
