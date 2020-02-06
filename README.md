@@ -95,6 +95,7 @@ php yii migrate --migrationPath=@diecoding/migrations
 "kartik-v/yii2-icons": "@dev",
 "kartik-v/yii2-detail-view": "dev-master",
 "kartik-v/yii2-money": "dev-master",
+"kartik-v/yii2-editable": "@dev",
 
 "skeeks/yii2-mobile-detect": "^1.0.2",
 

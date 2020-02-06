@@ -32,6 +32,7 @@
 		"kartik-v/yii2-icons": "@dev",
 		"kartik-v/yii2-detail-view": "@dev",
 		"kartik-v/yii2-money": "@dev",
+		"kartik-v/yii2-editable": "@dev",
 		"skeeks/yii2-mobile-detect": "^1.0.2",
 		"2amigos/yii2-tinymce-widget": "*",
 		"phpoffice/phpspreadsheet": "*",
