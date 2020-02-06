@@ -9,13 +9,15 @@ $(document).ready(function() {
 	// This instance will be the controller of all business logic of modal
 	// Backwards compatible lookup of old ajaxCrubModal ID
 	if ($("#ajaxCrubModal").length > 0 && $("#ajaxCrudModal").length == 0) {
-		modal = new ModalRemote("#ajaxCrubModal");
+		selectionModal = "#ajaxCrubModal";
 	} else {
-		modal = new ModalRemote("#ajaxCrudModal");
+		selectionModal = "#ajaxCrudModal";
 	}
 
+	modal = new ModalRemote(selectionModal);
+
 	// dissable enter submit
-	modal.keydown(function(event) {
+	$(selectionModal).keydown(function(event) {
 		if (event.keyCode == 13) {
 			event.preventDefault();
 			return false;
