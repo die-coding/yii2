@@ -33,7 +33,7 @@ class ThemeConfig extends Component
     }
 
     /**
-     *
+     * 
      */
     public function getPublishedUrl($themeName, $type = null)
     {
@@ -54,7 +54,7 @@ class ThemeConfig extends Component
      */
     public function getCommonAssetsUrl()
     {
-        $path = "{$this->themePath}/common/assets";
+        $path    = "{$this->themePath}/common/assets";
         $options = [
             'except' => [
                 '*.php',

@@ -77,9 +77,41 @@ php yii migrate --migrationPath=@diecoding/migrations
 ## List Package
 
 ```
-"yiisoft/yii2-bootstrap": "~2.0.0",
+"yiisoft/yii2-httpclient": "^2.0.0",
+"yiisoft/yii2-imagine": "~2.2.0",
+"yiisoft/yii2-authclient": "~2.1.0",
 "yiisoft/yii2-bootstrap4": "@dev",
 
-"diecoding/yii2-rbac": "dev-master",
-"diecoding/yii2-toastr": "dev-master"
+"vlucas/phpdotenv": "*",
+
+"kartik-v/yii2-widgets": "dev-master",
+"kartik-v/yii2-mpdf": "dev-master",
+"kartik-v/yii2-datecontrol": "dev-master",
+"kartik-v/yii2-date-range": "dev-master",
+"kartik-v/yii2-export": "*",
+"kartik-v/yii2-dialog": "*",
+"kartik-v/yii2-field-range": "*",
+"kartik-v/yii2-bootstrap4-dropdown": "dev-master",
+"kartik-v/yii2-icons": "@dev",
+"kartik-v/yii2-detail-view": "dev-master",
+"kartik-v/yii2-money": "dev-master",
+
+"skeeks/yii2-mobile-detect": "^1.0.2",
+
+"2amigos/yii2-tinymce-widget": "*",
+
+"phpoffice/phpspreadsheet": "*",
+"phpoffice/phpexcel": "*",
+
+"sizeg/yii2-jwt": "^2.0",
+
+"longman/telegram-bot": "*",
+"php-telegram-bot/telegram-bot-manager": "^1.4",
+
+"wbraganca/yii2-dynamicform": "*",
+
+"borales/yii2-phone-input": "*",
+
+"diecoding/yii2-rbac": "@dev",
+"diecoding/yii2-toastr": "@dev"
 ```
