@@ -2,6 +2,8 @@
 
 namespace diecoding\helpers;
 
+use diecoding\base\BaseDate;
+
 /**
  * 
  * @author Die Coding (Sugeng Sulistiyawan) <diecoding@gmail.com>
