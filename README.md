@@ -102,7 +102,6 @@ php yii migrate --migrationPath=@diecoding/migrations
 "2amigos/yii2-tinymce-widget": "*",
 
 "phpoffice/phpspreadsheet": "*",
-"phpoffice/phpexcel": "*",
 
 "sizeg/yii2-jwt": "^2.0",
 

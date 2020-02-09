@@ -36,15 +36,11 @@
 		"skeeks/yii2-mobile-detect": "^1.0.2",
 		"2amigos/yii2-tinymce-widget": "*",
 		"phpoffice/phpspreadsheet": "*",
-		"phpoffice/phpexcel": "*",
 		"sizeg/yii2-jwt": "^2.0",
 		"wbraganca/yii2-dynamicform": "*",
 		"borales/yii2-phone-input": "*",
 		"diecoding/yii2-rbac": "@dev",
 		"diecoding/yii2-toastr": "@dev"
-	},
-	"require-dev": {
-		"phpunit/phpunit": "<7"
 	},
 	"autoload": {
 		"psr-4": {
