@@ -2,8 +2,8 @@
 
 namespace diecoding\components;
 
+use diecoding\base\BaseDiecoding;
 use Yii;
-use yii\base\Component;
 
 /**
  * Config Theme
@@ -14,7 +14,7 @@ use yii\base\Component;
  * @link https://www.diecoding.com
  * @since 2.0.14
  */
-class ThemeConfig extends Component
+class ThemeConfig extends BaseDiecoding
 {
     /**
      * @var string $themePath

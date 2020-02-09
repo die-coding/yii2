@@ -3,8 +3,8 @@
 namespace diecoding\components;
 
 use common\models\User;
+use diecoding\base\BaseDiecoding;
 use Yii;
-use yii\base\Component;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -15,7 +15,7 @@ use yii\helpers\ArrayHelper;
  * @link https://www.diecoding.com
  * @since 2.0.14
  */
-class Assign extends Component
+class Assign extends BaseDiecoding
 {
     private $_available_roles = [];
 

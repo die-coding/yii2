@@ -21,8 +21,9 @@ class Dump extends BaseDiecoding
      * @param Type $var
      * @return void
      */
-    public function __construct($var)
+    public static function dd($var)
     {
-        return VarDumper::dump($var, $depth = 10, $highlight = true);
+        VarDumper::dump($var, 100, true);
+        exit;
     }
 }

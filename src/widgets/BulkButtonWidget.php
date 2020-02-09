@@ -20,11 +20,16 @@ class BulkButtonWidget extends Widget
     public $buttons;
 
     /**
+     * @var string $withSelected
+     */
+    public $withSelectedLabel = "Data terpilih";
+
+    /**
      * @var string $template
      */
     public $template = <<< HTML
 <div class="pull-left">
-    <i class="fa fa-check-square" aria-hidden="true"></i> Data terpilih
+    <i class="fa fa-check-square" aria-hidden="true"></i> {withSelectedLabel}
     {buttons}
 </div>
 HTML;
@@ -41,7 +46,10 @@ HTML;
     {
         parent::init();
 
-        $this->_content = str_replace('{buttons}', $this->buttons, $this->template);
+        $this->_content = strtr($this->template, [
+            '{buttons}'           => $this->buttons,
+            '{withSelectedLabel}' => $this->withSelectedLabel,
+        ]);
     }
 
     /**
