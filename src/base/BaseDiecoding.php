@@ -21,6 +21,7 @@ class BaseDiecoding extends Component
     public function init()
     {
         parent::init();
+
         if (!isset(Yii::$app->i18n->translations['diecoding'])) {
             Yii::$app->i18n->translations['diecoding'] = [
                 'class'          => 'yii\i18n\PhpMessageSource',
