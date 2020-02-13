@@ -41,7 +41,7 @@
 		"borales/yii2-phone-input": "*",
 		"diecoding/yii2-rbac": "@dev",
 		"diecoding/yii2-toastr": "@dev",
-        "diecoding/yii2-dropify": "^0.0.1"
+		"diecoding/yii2-dropify": "@dev"
 	},
 	"autoload": {
 		"psr-4": {
