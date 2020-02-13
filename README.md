@@ -110,5 +110,6 @@ php yii migrate --migrationPath=@diecoding/migrations
 "borales/yii2-phone-input": "*",
 
 "diecoding/yii2-rbac": "@dev",
-"diecoding/yii2-toastr": "@dev"
+"diecoding/yii2-toastr": "@dev",
+"diecoding/yii2-dropify": "@dev"
 ```

@@ -40,7 +40,8 @@
 		"wbraganca/yii2-dynamicform": "*",
 		"borales/yii2-phone-input": "*",
 		"diecoding/yii2-rbac": "@dev",
-		"diecoding/yii2-toastr": "@dev"
+		"diecoding/yii2-toastr": "@dev",
+		"diecoding/yii2-dropify": "@dev"
 	},
 	"autoload": {
 		"psr-4": {
