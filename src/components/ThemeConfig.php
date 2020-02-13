@@ -22,12 +22,20 @@ class ThemeConfig extends BaseDiecoding
     public $themePath;
 
     /**
+     * 
+     */
+    private $_publisedUrl;
+    private $_commonAssetsUrl;
+
+    /**
      * @inheritDoc
      */
     public function init()
     {
-        $dirSystem       = dirname(Yii::getAlias("@common"));
-        $this->themePath = "{$dirSystem}/themes";
+        if (!$this->themePath) {
+            $dirSystem       = dirname(Yii::getAlias("@common"));
+            $this->themePath = "{$dirSystem}/themes";
+        }
 
         parent::init();
     }
@@ -37,16 +45,20 @@ class ThemeConfig extends BaseDiecoding
      */
     public function getPublishedUrl($themeName, $type = null)
     {
-        $type      = $type ? "/{$type}" : "";
-        $path      = "{$this->themePath}/{$themeName}{$type}/assets";
-        $options   = [
-            'except' => [
-                '*.php',
-            ],
-        ];
-        Yii::$app->assetManager->publish($path, $options);
+        if (!$this->_publisedUrl) {
+            $type      = $type ? "/{$type}" : "";
+            $path      = "{$this->themePath}/{$themeName}{$type}/assets";
+            $options   = [
+                'except' => [
+                    '*.php',
+                ],
+            ];
+            Yii::$app->assetManager->publish($path, $options);
 
-        return Yii::$app->assetManager->getPublishedUrl($path);
+            $this->_publisedUrl = Yii::$app->assetManager->getPublishedUrl($path);
+        }
+
+        return $this->_publisedUrl;
     }
 
     /**
@@ -54,14 +66,18 @@ class ThemeConfig extends BaseDiecoding
      */
     public function getCommonAssetsUrl()
     {
-        $path    = "{$this->themePath}/common/assets";
-        $options = [
-            'except' => [
-                '*.php',
-            ],
-        ];
-        Yii::$app->assetManager->publish($path, $options);
+        if (!$this->_commonAssetsUrl) {
+            $path    = "{$this->themePath}/common/assets";
+            $options = [
+                'except' => [
+                    '*.php',
+                ],
+            ];
+            Yii::$app->assetManager->publish($path, $options);
 
-        return Yii::$app->assetManager->getPublishedUrl($path);
+            $this->_commonAssetsUrl = Yii::$app->assetManager->getPublishedUrl($path);
+        }
+
+        return $this->_commonAssetsUrl;
     }
 }
