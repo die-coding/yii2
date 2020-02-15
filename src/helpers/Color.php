@@ -30,7 +30,7 @@ class Color extends BaseDiecoding
         $shade = strtolower($shade);
 
         if (static::$_materialColor === null) {
-            $json = file_get_contents(__DIR__ . DIRECTORY_SEPARATOR . "material.color.json");
+            $json = file_get_contents(dirname(__DIR__) . DIRECTORY_SEPARATOR . "resources" . DIRECTORY_SEPARATOR . "material.color.json");
             static::$_materialColor = Json::decode($json);
         }
 
