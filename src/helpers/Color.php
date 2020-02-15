@@ -22,7 +22,7 @@ class Color extends BaseDiecoding
      *
      * @param string|null $color RED - BLUEGREY
      * @param string|null $shade 50 - A700
-     * @return void
+     * @return mixed
      */
     public static function material($color = null, $shade = null)
     {
