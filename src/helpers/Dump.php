@@ -18,7 +18,7 @@ class Dump extends BaseDiecoding
     /**
      * Extends VarDumper::dump() yii2
      *
-     * @param Type $var
+     * @param mixed $var
      * @return void
      */
     public static function dd($var)
