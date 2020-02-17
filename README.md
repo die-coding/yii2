@@ -79,7 +79,7 @@ php yii migrate --migrationPath=@diecoding/migrations
 ```
 "yiisoft/yii2-httpclient": "^2.0.0",
 "yiisoft/yii2-imagine": "~2.2.0",
-"yiisoft/yii2-authclient": "~2.1.7",
+"yiisoft/yii2-authclient": "@dev",
 "yiisoft/yii2-bootstrap4": "@dev",
 
 "vlucas/phpdotenv": "*",
