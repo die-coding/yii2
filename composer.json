@@ -18,7 +18,7 @@
 		"yiisoft/yii2": "~2.0",
 		"yiisoft/yii2-httpclient": "^2.0.0",
 		"yiisoft/yii2-imagine": "~2.2.0",
-		"yiisoft/yii2-authclient": "~2.1.0",
+		"yiisoft/yii2-authclient": "~2.1.7",
 		"yiisoft/yii2-bootstrap4": "@dev",
 		"vlucas/phpdotenv": "*",
 		"kartik-v/yii2-widgets": "@dev",
