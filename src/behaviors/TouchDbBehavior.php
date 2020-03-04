@@ -9,7 +9,7 @@ use yii\base\Event;
 use yii\db\ActiveRecord;
 
 /**
- * {@inheritDoc}
+ * @inheritdoc
  * 
  * @author Die Coding (Sugeng Sulistiyawan) <diecoding@gmail.com>
  * @copyright 2019 Die Coding

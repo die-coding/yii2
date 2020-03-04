@@ -28,7 +28,7 @@ class ThemeConfig extends BaseDiecoding
     private $_commonAssetsUrl;
 
     /**
-     * @inheritDoc
+     * @inheritdoc
      */
     public function init()
     {

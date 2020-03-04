@@ -40,7 +40,7 @@ HTML;
     protected $_content;
 
     /**
-     * @inheritDoc
+     * @inheritdoc
      */
     public function init()
     {
@@ -53,7 +53,7 @@ HTML;
     }
 
     /**
-     * @inheritDoc
+     * @inheritdoc
      */
     public function run()
     {

@@ -16,7 +16,7 @@ use yii\base\Component;
 class BaseDiecoding extends Component
 {
     /**
-     * @inheritDoc
+     * @inheritdoc
      */
     public function init()
     {

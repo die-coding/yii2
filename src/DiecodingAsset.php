@@ -15,12 +15,12 @@ use yii\web\AssetBundle;
 class DiecodingAsset extends AssetBundle
 {
     /**
-     * @inheritDoc
+     * @inheritdoc
      */
     public $sourcePath = '@diecoding/assets';
 
     /**
-     * @inheritDoc
+     * @inheritdoc
      */
     public function init()
     {
