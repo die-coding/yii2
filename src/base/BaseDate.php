@@ -35,7 +35,7 @@ class BaseDate extends BaseDiecoding
     public static function format($format = 'Y-m-d', $date)
     {
         $time = is_int($date) ? $date : strtotime($date);
-        $date = $format === "time()" ? $time : date($format, $time);
+        $date = $format === "time()" ? (int) $time : date($format, $time);
 
         $translate = [
             'April'     => Yii::t('diecoding', 'April'),
