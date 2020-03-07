@@ -20,6 +20,8 @@ use yii\db\Query;
  */
 class BaseDate extends BaseDiecoding
 {
+    const FORMAT_TIME = "time()";
+
     /**
      * @var int
      */
@@ -27,15 +29,16 @@ class BaseDate extends BaseDiecoding
 
     /**
      * Gets current date from database
-     * For return time format user ```format("time()")```
+     * For return time format use `Date::FORMAT_TIME`
      *
      * @param string $format Date Format. Please refer to `date()` documentation.
+     * @link https://php.net/manual/en/function.date.php
      * @return string|int
      */
     public static function format($format = 'Y-m-d', $date)
     {
         $time = is_int($date) ? $date : strtotime($date);
-        if ($format === "time()") {
+        if ($format === self::FORMAT_TIME) {
 
             return $time;
         }
@@ -73,7 +76,7 @@ class BaseDate extends BaseDiecoding
      * @param Connection|null $db the database connection used to generate the SQL statement.
      *                            If this parameter is not given, the `db` application
      *                            component will be used.
-     * @return string|int format()
+     * @return string|int `Date::format()`
      */
     public static function currentDate($format = 'Y-m-d', Connection $db = null)
     {
@@ -94,7 +97,7 @@ class BaseDate extends BaseDiecoding
      * @param Connection|null $db the database connection used to generate the SQL statement.
      *                            If this parameter is not given, the `db` application
      *                            component will be used.
-     * @return string|int format()
+     * @return string|int `Date::format()`
      */
     public static function currentDateTime($format = 'Y-m-d H:i:s', Connection $db = null)
     {
