@@ -48,7 +48,7 @@ class Assign extends BaseDiecoding
     {
         return empty($this->getActive());
     }
-    
+
     /**
      * get assign active | auth_active
      *
@@ -72,7 +72,7 @@ class Assign extends BaseDiecoding
     public function setAssign($assign = null)
     {
         $listAssign = array_values($this->getListAssign());
-        $user = User::findOne(@Yii::$app->user->id);
+        $user = User::findOne(Yii::$app->user->id);
         if ($assign) {
             if (in_array($assign, $listAssign)) {
                 $user->auth_active = $assign;
@@ -119,7 +119,7 @@ class Assign extends BaseDiecoding
      * Add user permission|role
      *
      * @param int $user_id
-     * @param string $assign
+     * @param string|array $assign
      * @return boolean
      */
     public function addAssign($user_id, $assign)
@@ -149,7 +149,7 @@ class Assign extends BaseDiecoding
      * Revoke user permission|role
      *
      * @param int $user_id
-     * @param string $assign
+     * @param string|array $assign
      * @return boolean
      */
     public function revokeAssign($user_id, $assign)
@@ -157,7 +157,7 @@ class Assign extends BaseDiecoding
         if (is_array($assign)) {
             $_bool = false;
             foreach ($assign as $_assign) {
-                $_bool = $_bool || $this->addAssign($user_id, $_assign);
+                $_bool = $_bool || $this->revokeAssign($user_id, $_assign);
             }
 
             return $_bool;
