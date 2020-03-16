@@ -39,6 +39,7 @@
 		"sizeg/yii2-jwt": "^2.0",
 		"wbraganca/yii2-dynamicform": "*",
 		"borales/yii2-phone-input": "*",
+        "soundasleep/html2text": "@dev",
 		"diecoding/yii2-rbac": "@dev",
 		"diecoding/yii2-toastr": "@dev",
 		"diecoding/yii2-dropify": "@dev"

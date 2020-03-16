@@ -108,6 +108,7 @@ php yii migrate --migrationPath=@diecoding/migrations
 "wbraganca/yii2-dynamicform": "*",
 
 "borales/yii2-phone-input": "*",
+"soundasleep/html2text": "@dev",
 
 "diecoding/yii2-rbac": "@dev",
 "diecoding/yii2-toastr": "@dev",
