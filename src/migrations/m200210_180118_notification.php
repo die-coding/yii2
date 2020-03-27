@@ -1,6 +1,5 @@
 <?php
 
-use training\components\Application;
 use yii\db\Migration;
 
 /**
@@ -22,10 +21,11 @@ class m200210_180118_notification extends Migration
             'user_id' => $this->integer()->notNull(),
             'subject' => $this->string()->notNull(),
             'body'    => $this->text(),
+            'trigger' => $this->text(),
             'read_at' => $this->dateTime(),
             'data'    => $this->binary(),
 
-            'status'     => $this->smallInteger()->defaultValue(Application::STATUS_ACTIVE),
+            'status'     => $this->smallInteger()->defaultValue(1),
             'created_at' => $this->dateTime(),
             'updated_at' => $this->dateTime(),
         ], $tableOptions);
