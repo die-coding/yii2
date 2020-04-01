@@ -33,8 +33,7 @@ class ThemeConfig extends BaseDiecoding
     public function init()
     {
         if (!$this->themePath) {
-            $dirSystem       = dirname(Yii::getAlias("@common"));
-            $this->themePath = "{$dirSystem}/themes";
+            $this->themePath = Yii::getAlias("@themes");
         }
 
         parent::init();
