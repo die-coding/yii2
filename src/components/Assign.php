@@ -2,7 +2,6 @@
 
 namespace diecoding\components;
 
-use common\models\User;
 use diecoding\base\BaseDiecoding;
 use Yii;
 use yii\helpers\ArrayHelper;
@@ -72,7 +71,8 @@ class Assign extends BaseDiecoding
     public function setAssign($assign = null)
     {
         $listAssign = array_values($this->getListAssign());
-        $user = User::findOne(Yii::$app->user->id);
+        $class = Yii::$app->user->identityClass;
+        $user = $class::findIdentity(Yii::$app->user->id);
         if ($assign) {
             if (in_array($assign, $listAssign)) {
                 $user->auth_active = $assign;
