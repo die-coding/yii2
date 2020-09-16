@@ -113,5 +113,5 @@ php yii migrate --migrationPath=@diecoding/migrations
 "diecoding/yii2-rbac": "@dev",
 "diecoding/yii2-toastr": "@dev",
 "diecoding/yii2-dropify": "@dev",
-"diecoding/yii2-pdfjs": "@dev"
+"diecoding/yii2-pdfjs": "dev-master"
 ```
