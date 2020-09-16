@@ -9,7 +9,7 @@ use yii\helpers\Html;
 /**
  * 
  * @author Die Coding (Sugeng Sulistiyawan) <diecoding@gmail.com>
- * @copyright 2019 Die Coding
+ * @copyright 2020 Die Coding
  * @license BSD-3-Clause
  * @link https://www.diecoding.com
  * @since 2.0.14
