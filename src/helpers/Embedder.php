@@ -3,6 +3,7 @@
 namespace diecoding\helpers;
 
 use diecoding\base\BaseDiecoding;
+use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
 /**
@@ -42,8 +43,6 @@ class Embedder extends BaseDiecoding
      */
     public static function pdf($uri, $options = [])
     {
-        $options = !empty($options) ? $options : static::$defaultOptions;
-
         if (YII_ENV_PROD) {
             $options["src"] = "https://drive.google.com/viewerng/viewer?url={$uri}&embedded=true";
 
@@ -60,7 +59,7 @@ class Embedder extends BaseDiecoding
         return Html::tag(
             "embed",
             null,
-            $options
+            ArrayHelper::merge(static::$defaultOptions, $options)
         );
     }
     /**
@@ -81,13 +80,12 @@ class Embedder extends BaseDiecoding
      */
     public static function doc($uri, $options = [])
     {
-        $options = !empty($options) ? $options : static::$defaultOptions;
         $options["src"] = "https://docs.google.com/gview?url={$uri}&embedded=true";
 
         return Html::tag(
             "iframe",
             null,
-            $options
+            ArrayHelper::merge(static::$defaultOptions, $options)
         );
     }
 }
