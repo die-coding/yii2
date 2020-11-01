@@ -49,7 +49,7 @@ class Embedder extends BaseDiecoding
             return Html::tag(
                 "iframe",
                 null,
-                $options
+                ArrayHelper::merge(static::$defaultOptions, $options)
             );
         }
 
@@ -62,6 +62,7 @@ class Embedder extends BaseDiecoding
             ArrayHelper::merge(static::$defaultOptions, $options)
         );
     }
+
     /**
      * Previewer .DOC, .DOCX file
      *
