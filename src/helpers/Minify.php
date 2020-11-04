@@ -30,17 +30,17 @@ class Minify extends BaseDiecoding
         // Minify inline CSS declaration(s)
         if (strpos($input, ' style=') !== false) {
             $input = preg_replace_callback('#<([^<]+?)\s+style=([\'"])(.*?)\2(?=[\/\s>])#s', function ($matches) {
-                return '<' . $matches[1] . ' style=' . $matches[2] . static::minifyCss($matches[3]) . $matches[2];
+                return '<' . $matches[1] . ' style=' . $matches[2] . static::css($matches[3]) . $matches[2];
             }, $input);
         }
         if (strpos($input, '</style>') !== false) {
             $input = preg_replace_callback('#<style(.*?)>(.*?)</style>#is', function ($matches) {
-                return '<style' . $matches[1] . '>' . static::minifyCss($matches[2]) . '</style>';
+                return '<style' . $matches[1] . '>' . static::css($matches[2]) . '</style>';
             }, $input);
         }
         if (strpos($input, '</script>') !== false) {
             $input = preg_replace_callback('#<script(.*?)>(.*?)</script>#is', function ($matches) {
-                return '<script' . $matches[1] . '>' . static::minifyJs($matches[2]) . '</script>';
+                return '<script' . $matches[1] . '>' . static::js($matches[2]) . '</script>';
             }, $input);
         }
 
